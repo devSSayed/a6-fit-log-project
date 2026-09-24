@@ -25,7 +25,7 @@ const WorkOuts = async () => {
 
 
 
-        <section className='container mx-auto mt-28'>
+        <section id='library' className='container mx-auto mt-28'>
 
 
             <div className='space-y-1'>

@@ -1,7 +1,7 @@
 import NavLogo from '@/assets/logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import NavMiddelLinks from '../NavMiddelLinks';
+import NavMiddelLinks from '../CSR links/NavMiddelLinks';
 
 const Navbar = () => {
 
