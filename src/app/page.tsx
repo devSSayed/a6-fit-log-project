@@ -1,15 +1,14 @@
-import HomePageBanner from "@/Components/Banner";
+import HomePageBanner from "@/Components/HomePage/HomePageBanner";
+import WorkOuts from "@/Components/HomePage/WorkOuts";
 
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="">
-        
+    <div className="">          
         <HomePageBanner />
+        <WorkOuts />
         
         
-      </main>
     </div>
   );
 }

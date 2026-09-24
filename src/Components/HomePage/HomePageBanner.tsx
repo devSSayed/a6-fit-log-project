@@ -14,7 +14,9 @@ const HomePageBanner = () => {
                         into today &apos s plan, and watch the week&aposs work add up.</p>
 
                 </div>
+        
                 <button className='btn bg-[#C2F800] text-[#0C0D10] font-inter font-bold py-6'>BROWSE WORKOUTS</button>
+
             </div>
             <Image src={BannerLogo} alt={'a person doing workouts'}></Image>
         </section>
