@@ -2,12 +2,13 @@ import NavLogo from '@/assets/logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import NavMiddelLinks from '../CSR links/NavMiddelLinks';
+import NavEndLinks from '../CSR links/NavEndLinks';
 
 const Navbar = () => {
 
 
     return (
-        <nav className='border-b border-[#1B1F28]'>
+        <nav className='sticky top-0 z-50 bg-black/70 backdrop-blur-md border-b border-[#1B1F28]'>    
             <div className="container mx-auto navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -31,10 +32,8 @@ const Navbar = () => {
                         <NavMiddelLinks />
                     </ul>
                 </div>
-                <div className="navbar-end flex gap-6">
-                    <Link className='text[14px] text-[#D1D5DB] font-inter hover:bg-gray-800/45 px-3 py-2 rounded-xl' href={'/MyPlan'}>Plan <span className='px-2.25 py-1 rounded-[50%] bg-[#C2F800] text-[#000000]'>0</span></Link>
-                    <Link className='text[14px] text-[#9CA3AF] font-inter px-3 py-2 rounded-xl hover:bg-gray-800/45' href={'/MyPlan'}>Saved <span className='px-1.5 py-px rounded-[50%] border-2'>0</span></Link>
-                    
+                <div className="navbar-end">
+                    <NavEndLinks />                    
                 </div>
             </div>
         </nav>

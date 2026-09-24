@@ -1,8 +1,10 @@
+import AddTodayButton from '@/Components/CSR links/AddTodayButton';
+import AddToSaveButton from '@/Components/CSR links/AddToSaveButton';
 import { IworkOut } from '@/Components/Types/iWorkout';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react';
-import { FaRegBookmark, FaRegCalendarPlus } from 'react-icons/fa6';
+
 
 export const metadata: Metadata = {
     title: "FITLOG-Workout-Details",
@@ -129,9 +131,10 @@ const workoutDetailsPage = async ({ params }: iWorkoutDetailsPageProps) => {
 
                     </div>
 
-                    <div className='space-x-4'>
-                        <button className='btn bg-[#C2F800] text-[#0C0D10] font-inter font-bold rounded-2xl w-fit py-6 mt-7'><FaRegCalendarPlus className='text-[16px]' /> Add to today&apos;s plan</button>
-                        <button className='btn border-2 bg-[#0F1115] border-[#374151] text-[#E5E7EB] font-inter font-medium rounded-2xl w-fit py-6 mt-7'><FaRegBookmark className='text-[16px] text-[#E5E7EB]' /> Save for later</button>
+                    <div className='flex items-center gap-2 space-x-4'>
+                        <AddTodayButton work={work} />
+                        <AddToSaveButton work={work} />
+                        
                     </div>
 
 
