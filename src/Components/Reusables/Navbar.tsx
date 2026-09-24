@@ -32,8 +32,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-6">
-                    <button className='text[14px] text-[#D1D5DB] font-inter hover:bg-gray-800/45 px-3 py-2 rounded-xl'><Link href={'/MyPlan'}>Plan <span className='px-2.25 py-1 rounded-[50%] bg-[#C2F800] text-[#000000]'>0</span></Link></button>
-                    <button className='text[14px] text-[#9CA3AF] font-inter px-3 py-2 rounded-xl hover:bg-gray-800/45'><Link href={'/MyPlan'}>Saved <span className='px-1.5 py-px rounded-[50%] border-2'>0</span></Link></button>
+                    <Link className='text[14px] text-[#D1D5DB] font-inter hover:bg-gray-800/45 px-3 py-2 rounded-xl' href={'/MyPlan'}>Plan <span className='px-2.25 py-1 rounded-[50%] bg-[#C2F800] text-[#000000]'>0</span></Link>
+                    <Link className='text[14px] text-[#9CA3AF] font-inter px-3 py-2 rounded-xl hover:bg-gray-800/45' href={'/MyPlan'}>Saved <span className='px-1.5 py-px rounded-[50%] border-2'>0</span></Link>
                     
                 </div>
             </div>

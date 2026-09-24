@@ -1,11 +1,12 @@
-import { CiDumbbell } from 'react-icons/ci';
+import FooterLogo from '@/assets/logo.png';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
         <footer className='border-t border-[#1B1F28] mt-24'>
             <div className='container mx-auto flex justify-between items-center py-10'>
-                <div className='flex items-center'>
-                   <CiDumbbell className='text-4xl text-[#C2F800]'/>
+                <div className='flex items-center gap-2'>
+                   <Image src={FooterLogo} alt='FITLOG logo' className='w-6 h-6'></Image>
                     <p className="font-oswald font-bold text-2xl text-[#FFFFFF]">FITLOG</p>
                 </div>
 

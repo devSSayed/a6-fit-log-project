@@ -13,7 +13,7 @@ const HomePageBanner = () => {
                     <h2 className='font-oswald font-bold text-7xl text-[#FFFFFF]'>TRAIN WITH INTENT. LOG <br />
                         EVERY SET. </h2>
                     <p className='font-inter text-[#9CA3AF]'>FitLog is a dark, no-nonsense gym companion: pick a lift, lock it <br />
-                        into today &apos s plan, and watch the week&aposs work add up.</p>
+                        into today&apos;s plan, and watch the week&apos;s work add up.</p>
 
                 </div>
         

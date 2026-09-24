@@ -34,7 +34,7 @@ const WorkOuts = async () => {
             </div>
 
 
-            <div className='container mx-auto mt-12 grid grid-cols-3 gap-7'>
+            <div className='container mx-auto mt-12 grid grid-cols-3 grid-row-4 gap-7'>
                 {
                     workouts.map((eachWorkouts: IworkOut) =>
 
