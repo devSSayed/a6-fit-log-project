@@ -8,7 +8,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className='sticky top-0 z-50 bg-black/70 backdrop-blur-md border-b border-[#1B1F28]'>    
+        <nav className='sticky top-0 z-50 bg-[##0F1115]/70 backdrop-blur-md border-b border-[#1B1F28]'>    
             <div className="container mx-auto navbar">
                 <div className="navbar-start">
                     <div className="dropdown">

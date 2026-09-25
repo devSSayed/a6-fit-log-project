@@ -3,14 +3,24 @@ import { workContext } from '@/WorkoutContext/workContext';
 import React, { useContext } from 'react';
 import { FaRegCalendarPlus } from 'react-icons/fa6';
 import { IworkOut } from '../Types/iWorkout';
+import toast from 'react-hot-toast';
 
 const AddTodayButton = ({work}: {work: IworkOut}) => {
 
     const {addToPlan, setAddToPlan} = useContext(workContext)
 
+    const isAdded = addToPlan.find((IsAddedToArr) => IsAddedToArr.id === work.id)
+
     const handleTodaysPlan = () =>{
 
-        setAddToPlan([...addToPlan, work])
+        if(isAdded){
+            return toast.error(`Already Added in you\'re plan`)
+        }else{
+            setAddToPlan([...addToPlan, work])
+            toast.success(`Added to today\'s plan`)
+        }
+
+        
     }
 
     return (

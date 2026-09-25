@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/Components/Reusables/Navbar";
 import Footer from "@/Components/Reusables/Footer";
 import WorkProvider from '../WorkoutContext/workContext'
+import { Toaster } from "react-hot-toast";
 
 const oswald = Oswald({
   variable: "--font-Oswald",
@@ -32,6 +33,28 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <WorkProvider>
           <Navbar />
           {children}
+          {/* Global Toaster Container */}
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              // Custom dark theme styling
+              style: {
+                background: '#000000',
+                color: '#ffffff',
+                fontWeight: 'bold',
+                border: '1px solid #27272a',
+                borderRadius: '12px',
+                padding: '12px 16px',
+              },
+              success: {
+                iconTheme: {
+                  primary: '#C2F800', // Your lime/neon color
+                  secondary: '#0F1115',
+                },
+              },
+            }}
+          />
+
           <Footer />
         </WorkProvider>
       </body>
