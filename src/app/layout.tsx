@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "FITLOG-WorkOut",
+  title: "FITLOG",
   description: "...",
 };
 
@@ -31,31 +31,37 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
       <body className="min-h-full flex flex-col">
         <WorkProvider>
-          <Navbar />
-          {children}
-          {/* Global Toaster Container */}
-          <Toaster
-            position="top-right"
-            toastOptions={{
-              // Custom dark theme styling
-              style: {
-                background: '#000000',
-                color: '#ffffff',
-                fontWeight: 'bold',
-                border: '1px solid #27272a',
-                borderRadius: '12px',
-                padding: '12px 16px',
-              },
-              success: {
-                iconTheme: {
-                  primary: '#C2F800', // Your lime/neon color
-                  secondary: '#0F1115',
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <main className="flex-1">
+                {children}
+            </main>
+            
+            {/* Global Toaster Container */}
+            <Toaster
+              position="top-right"
+              toastOptions={{
+                // Custom dark theme styling
+                style: {
+                  background: '#000000',
+                  color: '#ffffff',
+                  fontWeight: 'bold',
+                  border: '1px solid #27272a',
+                  borderRadius: '12px',
+                  padding: '12px 16px',
                 },
-              },
-            }}
-          />
+                success: {
+                  iconTheme: {
+                    primary: '#C2F800', // Your lime/neon color
+                    secondary: '#0F1115',
+                  },
+                },
+              }}
+            />
 
-          <Footer />
+            <Footer />
+          </div>
+
         </WorkProvider>
       </body>
     </html>

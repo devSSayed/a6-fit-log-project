@@ -24,7 +24,7 @@ const AddTodayButton = ({work}: {work: IworkOut}) => {
     }
 
     return (
-        <button onClick={handleTodaysPlan} className='btn bg-[#C2F800] text-[#0C0D10] font-inter font-bold rounded-2xl w-fit py-6 mt-7'><FaRegCalendarPlus className='text-[16px]' /> Add to today&apos;s plan</button>
+        <button onClick={handleTodaysPlan} className='btn bg-[#C2F800] text-[#0C0D10] hover:bg-[#14171E] hover:text-[#C2F800] hover:border-[#C2F800] font-inter font-bold rounded-2xl w-fit py-6 mt-7'><FaRegCalendarPlus className='text-[16px]' /> Add to today&apos;s plan</button>
     );
 };
 
