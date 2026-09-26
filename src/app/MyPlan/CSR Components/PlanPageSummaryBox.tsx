@@ -21,8 +21,8 @@ const PlanPageSummaryBox = () => {
 
 
     return (
-        <div className='bg-[#13161D] border border-[#232732] rounded-2xl p-12'>
-            <div className='grid grid-cols-3 grid-rows-1'>
+        <div className='bg-[#13161D] border border-[#232732] rounded-2xl p-6 md:p-12'>
+            <div className='grid grid-cols-3 grid-rows-1 items-center'>
 
                 <div className='space-y-1'>
                     <h6 className='font-inter text-[15px] text-[#8A92A0]'>Exercises</h6>
@@ -31,7 +31,7 @@ const PlanPageSummaryBox = () => {
 
 
                 <div className='flex items-center'>
-                    <div className="divider lg:divider-horizontal h-18"></div>
+                    <div className="divider divider-horizontal h-18 my-0 mx-1 sm:mx-4 shrink-0"></div>
                     <div className='space-y-1'>
                         <h6 className='font-inter text-[15px] text-[#8A92A0]'>Minutes</h6>
                         <p className='font-oswald font-bold text-5xl text-[#FFFFFF]'>{SumOfActiveTab(totalMin)}</p>
@@ -39,7 +39,7 @@ const PlanPageSummaryBox = () => {
                 </div>
 
                 <div className='flex items-center'>
-                    <div className="divider lg:divider-horizontal h-18"></div>
+                    <div className="divider divider-horizontal h-18 my-0 mx-1 sm:mx-4 shrink-0"></div>
                     <div className='space-y-1'>
                         <h6 className='font-inter text-[15px] text-[#8A92A0]'>Calories</h6>
                         <p className='font-oswald font-bold text-5xl text-[#FFFFFF]'>{SumOfActiveTab(totalCal)}</p>

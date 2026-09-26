@@ -28,13 +28,13 @@ const WorkOuts = async () => {
         <section id='library' className='container mx-auto mt-28'>
 
 
-            <div className='space-y-1'>
-                <h4 className='font-oswald font-bold text-3xl text-[#FFFFFF]'>THE LIBRARY</h4>
-                <p className='font-inter text-[#9CA3AF]'>Twelve lifts covering every major muscle group.</p>
+            <div className='space-y-1 mx-3 xl:mx-0'>
+                <h4 className='font-oswald font-bold text-2xl md:text-3xl text-[#FFFFFF]'>THE LIBRARY</h4>
+                <p className='font-inter text-[#9CA3AF] text-[13px] md:text-[1rem]'>Twelve lifts covering every major muscle group.</p>
             </div>
 
 
-            <div className='container mx-auto mt-12 grid grid-cols-3 grid-row-4 gap-7'>
+            <div className='container mx-auto mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-2 w-full xl:grid-cols-3 grid-row-4 gap-7'>
                 {
                     workouts.map((eachWorkouts: IworkOut) =>
 

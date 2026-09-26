@@ -14,7 +14,7 @@ interface iworkOutCardProps {
 const HompageWorkoutCard = ({ eachWorkouts }: iworkOutCardProps) => {
     return (
         <Link href={`/WorkOuts/${eachWorkouts.id}`}>
-            <div className='bg-[#15171D] border border-[#222630] rounded-2xl h-[500] cursor-pointer hover:border-[#C2F800]/50 transition-all duration-500 delay-10'>
+            <div className='bg-[#15171D] border border-[#222630] rounded-2xl h-[500] mx-3 xl:mx-0 cursor-pointer hover:border-[#C2F800]/50 transition-all duration-500 delay-10'>
                 <div className='relative w-full aspect-video overflow-hidden rounded-t-2xl'>
                     <Image src={eachWorkouts.image} alt='WorkOut Image' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-cover'></Image>
                 </div>

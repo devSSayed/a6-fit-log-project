@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Oswald, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Reusables/Navbar";
@@ -21,15 +21,23 @@ export const metadata: Metadata = {
   description: "...",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
       data-theme='dark'
       className={`${oswald.variable} ${inter.variable} h-full antialiased`}
+      
     >
 
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col w-full max-w-full overflow-x-hidden">
         <WorkProvider>
           <div className="flex flex-col min-h-screen">
             <Navbar />

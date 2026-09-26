@@ -20,13 +20,13 @@ const PlanPageTabs = () => {
 
 
     return (
-        <div className='grid'>
-            <div className="tabs tabs-box w-fit rounded-2xl border border-[#232732] bg-[#151921] p-1.5">
+        <div className='flex w-fit'>
+            <div className="flex flex-col md:flex-row items-center flex-nowrap tabs tabs-box rounded-2xl border border-[#232732] bg-[#151921] p-1.5">
                 {/* tab 1 header */}
                 <input
                     type="radio"
                     name="my_tabs_1"
-                    className="tab font-inter rounded-xl hover:text-[#FFFFFF] px-5 text-[#8A92A0] transition-colors checked:bg-[#1F242D] checked:font-bold checked:text-white checked:shadow-sm checked:border checked:border-[#232732]"
+                    className="tab font-inter rounded-xl hover:text-[#FFFFFF] px-3 xl:px-5 text-[#8A92A0] transition-colors checked:bg-[#1F242D] checked:font-bold checked:text-white checked:shadow-sm checked:border checked:border-[#232732]"
                     aria-label="Today&apos;s Plan"
                     checked={activeTab === 'Today'}
                     onChange={() => setActiveTab('Today')} />

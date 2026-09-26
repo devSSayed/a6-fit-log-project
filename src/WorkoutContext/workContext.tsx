@@ -14,7 +14,9 @@ interface iSharedDatas {
     activeTab: 'Today' | 'Saved',
     setActiveTab: Dispatch<SetStateAction<'Today' | 'Saved'>>,
     sortBy: 'Duration' | 'Calories' | 'Rating',
-    setSortBy: Dispatch<SetStateAction<'Duration' | 'Calories' | 'Rating'>>
+    setSortBy: Dispatch<SetStateAction<'Duration' | 'Calories' | 'Rating'>>,
+    completeIds: number[],
+    setCompleteIds: Dispatch<SetStateAction<number[]>>
 }
 
 export const workContext = createContext({} as iSharedDatas);
@@ -25,6 +27,7 @@ const WorkProvider = ({ children }: iWorkProviderProps) => {
     const [savedForLater, setSavedForLater] = useState<IworkOut[]>([])
     const [activeTab, setActiveTab] = useState<'Today' | 'Saved'>('Today')
     const [sortBy, setSortBy] = useState<'Duration' | 'Calories' | 'Rating'>('Duration')
+    const [completeIds, setCompleteIds] = useState<number[]>([])
 
     const sharedDatas:iSharedDatas = {
         addToPlan,
@@ -34,7 +37,9 @@ const WorkProvider = ({ children }: iWorkProviderProps) => {
         activeTab,
         setActiveTab,
         sortBy,
-        setSortBy
+        setSortBy,
+        completeIds,
+        setCompleteIds
     }
 
     return <workContext.Provider value={sharedDatas}>{children}</workContext.Provider>
