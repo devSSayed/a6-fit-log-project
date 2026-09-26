@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️ B14-A06-FITLOG-Project
 
-## Getting Started
+## 📝 Description
 
-First, run the development server:
+**FitLog** is a no-BS gym companion where you can choose a workout, lock it in as today's plan, or save it for later. You can also keep track of your workout plans and get a quick summary of your progress for the week.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ⚛️ React
+- 📘 TypeScript (TSX)
+- 🔔 React Hot Toast
+- 🎨 Tailwind CSS
+- 🌼 DaisyUI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 🏋️ **Browse Workouts**  
+   See all available workouts in one place and easily explore different exercises.
 
-## Learn More
+2. 📖 **Workout Details**  
+   Click on any workout to see its details, including how to properly perform the exercise.
 
-To learn more about Next.js, take a look at the following resources:
+3. 📅 **Today's Plan & Save for Later**  
+   Add a workout to today's plan or save it for later when you're ready to do it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. 📋 **My Plan**  
+   Manage all your selected workouts from the **My Plan** page, with separate sections for today's workouts and workouts saved for later.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. 📊 **Sort & Track Your Workouts**  
+   Sort workouts by duration or rating and view a quick summary of your workouts in the summary box.
